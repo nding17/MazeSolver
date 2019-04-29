@@ -139,7 +139,6 @@ print_apart_details(double* input, int input_len){
 	/* the max total area in this case theoretically possible is
 	   99999.99 m^2*/
 	printf("   Total area   %25.2lf metres^2\n", room_total);
-
 	return;
 
 }/* handle extreme cases */
@@ -149,15 +148,11 @@ print_apart_details(double* input, int input_len){
    right after the starting position */
 int
 search_new_apart(double* input, int start, int len){
-
 	int count = start;
-
 	while(count < len && !(input[count] < 0.0)){
 		count++;
 	}
-
 	return count;
-
 }
 
 
@@ -212,7 +207,6 @@ save_report_info(double* input, int input_len, double* added, int st){
 		added[st+6] = utility_percent;
 
 	return;
-
 }
 
 /* format the summary report */
@@ -243,7 +237,6 @@ print_report(double* sub, int len){
 	printf("%s\n", DIV);
 
 	return;
-
 }/* handle extreme cases */
 
 
@@ -253,7 +246,6 @@ int
 input_processing(double* input){
 
 	double input_num = 0.0;
-
 	int count = 0;
 
 	while(scanf("%lf", &input_num) == 1){
@@ -261,7 +253,6 @@ input_processing(double* input){
 	}
 
 	return count;
-
 }/* handle extreme cases */
 
 
@@ -294,7 +285,6 @@ roomtype_identifier(int room_type){
 	}else{
 		return "Invalid";
 	}
-
 } /* End of Program */
 
 
